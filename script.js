@@ -1,6 +1,6 @@
 const dateObj = new Date();
 const fontSizeLandscape = "35cqh";
-const fontSizePortrait = "45cqw";
+const fontSizePortrait = "40cqw";
 
 
 // MONTH
@@ -17,7 +17,9 @@ function getScreenOrientation() {
     if (window.innerWidth > window.innerHeight) {
         // console.log("landscape")
         document.getElementsByClassName("grid")[0].style.height = "100%";
+        document.getElementsByClassName("grid")[0].style.width = "fit-content";
         document.getElementsByClassName("grid")[0].style.padding = "4cqh";
+        document.getElementsByClassName("grid")[0].style.gap = "4cqh";
         document.getElementsByClassName("grid__card__content")[0].style.fontSize = fontSizeLandscape;
         document.getElementsByClassName("grid__card__content")[1].style.fontSize = fontSizeLandscape;
         document.getElementsByClassName("grid__card__content")[2].style.fontSize = fontSizeLandscape;
@@ -26,6 +28,7 @@ function getScreenOrientation() {
         document.getElementsByClassName("grid")[0].style.height = "fit-content";
         document.getElementsByClassName("grid")[0].style.width = "100%";
         document.getElementsByClassName("grid")[0].style.padding = "4cqw";
+        document.getElementsByClassName("grid")[0].style.gap = "4cqw";
         document.getElementsByClassName("grid__card__content")[0].style.fontSize = fontSizePortrait;
         document.getElementsByClassName("grid__card__content")[1].style.fontSize = fontSizePortrait;
         document.getElementsByClassName("grid__card__content")[2].style.fontSize = fontSizePortrait;

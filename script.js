@@ -28,8 +28,8 @@ function getScreenOrientation() {
         // console.log("portrait")
         document.getElementsByClassName("grid")[0].style.height = "fit-content";
         document.getElementsByClassName("grid")[0].style.width = "100%";
-        document.getElementsByClassName("grid")[0].style.padding = "8cqw";
-        document.getElementsByClassName("grid")[0].style.gap = "8cqw";
+        document.getElementsByClassName("grid")[0].style.padding = "6cqw";
+        document.getElementsByClassName("grid")[0].style.gap = "6cqw";
         document.getElementsByClassName("grid__card__content")[0].style.fontSize = fontSizePortrait;
         document.getElementsByClassName("grid__card__content")[1].style.fontSize = fontSizePortrait;
         document.getElementsByClassName("grid__card__content")[2].style.fontSize = fontSizePortrait;

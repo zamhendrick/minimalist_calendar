@@ -1,24 +1,51 @@
-<html>
-    <head>
-        <title>Minimalist Calendar by ZGI</title>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <link rel="stylesheet" href="style.css" />
-    </head>
-    <body>
+    <title>Minimalist Calendar by Zam Hendrick</title>
+
+    <meta name="description" content="A minimalist fullscreen calendar displaying the current month and day with a clean, distraction-free design.">
+
+    <meta name="keywords" content="calendar, minimalist calendar, fullscreen calendar, date display, web app">
+
+    <meta name="author" content="Zam Hendrick">
+
+    <meta property="og:title" content="Minimalist Calendar by ZGI">
+    <meta property="og:description" content="A clean fullscreen calendar showing today's month and date.">
+    <meta property="og:type" content="website">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <h1 class="sr-only">
+            Minimalist Calendar Showing Today's Date
+        </h1>
+
+        <time id="current-date" datetime="">
+            June 14, 2026
+        </time>
+
         <div class="grid__container">
             <div class="grid">
                 <div class="grid__card grid__card--month">
                     <span class="grid__card__content"></span>
                 </div>
+
                 <div class="grid__card grid__card--day">
                     <span class="grid__card__content"></span>
                 </div>
+
                 <div class="grid__card grid__card--day">
                     <span class="grid__card__content"></span>
                 </div>
             </div>
         </div>
-        
-        <script src="script.js"></script>
-    </body>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
 </html>
